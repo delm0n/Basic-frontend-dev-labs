@@ -1,19 +1,28 @@
-<!DOCTYPE HTML PUBLIC «-//W3C//DTD HTML 4.01 Frameset//EN» 
-«http://www.w3.org/TR/html4/frameset.dtd»>
+<!DOCTYPE HTML>
 <html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Таблица</title>
+ <title>Таблица</title>
+  <meta charset="UTF-8" http-equiv="Content-Type">
+  <style>
+  table {
+        border: 1px solid black;
+        margin: auto; 
+        caption-side: bottom;
+       }
+    td,tr {
+          border: 1px solid black;
+          margin: auto;
+          }
+          #center { text-align: center; }
+    </style>
  </head>
  <body>
-  <center>
-  <table border="1"> 
-    <caption align="bottom"> 
+  <table  width = 400 height = 200 id="center" > 
+    <caption> 
         <b> Название таблицы </b>
-     </caption>
+    </caption>
    <tr> <td rowspan="2" >Item 1 </td> <td>Item 2</td><td>Item 3</td><td>Item 4</td>
    <tr> <td>Item 5</td><td>Item 6</td><td>Item 7</td></tr>
   </table>
-</center>
  </body>
 </html>
