@@ -1,31 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
+ 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+ 
+  <title>Зуев Артём 2 задание</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
   <style>
-  .features {
-    width: 510px;
-    margin: 0 auto 30px;
-    padding: 0 20px;
-  }
-  
-  .features p {
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin: 0 5px;
-  }
-  </style>
-  <title>Document</title>
+
+        nav{
+float: right;
+padding-top: 20px; 
+   }
+   ul.hr li {
+    display: inline; 
+    padding-right: 20px; 
+
+   }
+   article div {
+    width: 48%  ;
+    margin-top: 10px;
+   }
+   header {
+     display: flex;
+   }
+       </style>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+ 
 </head>
+ 
 <body>
-  <section class="features">
-    <h2 style="color:red">Что поможет вам создать домашний уют?</h2>
-    <p>Мебель и фурнитура</p>
-    <p>Лампы и торшеры</p>
-    <p>Аксессуары и мелочи</p>
-  </section>
+  <header>
+    <h1 style="padding-left:20px; float: left; margin-right: 25%; ">Wonder App</h1>
+      <nav>
+        <ul class="hr">
+          <li><a href="#p1">Product</a></li>
+          <li><a href="#p2">Solution</a></li>
+          <li><a href="#p3">Customers</a></li>
+          <li><a href="#p4">Contact US</a></li>
+          <li><input type="submit" value="Get Started"></li>
+        </ul>
+      </nav>
+  </header>
+  <main style="margin-top: 10px;">
+    <article name="#p1">
+      <div style="margin-left: 10px; float: left"><p style="text-align:center"><b>It's better than <br>sliced bread!</b><br>
+        Tell, the world how awesome your app is and<br>why they should use it!!</p></div>
+      <div style="float: right"><b>It's better than <br>sliced bread!</b><br>
+        Tell, the world how awesome your app is and<br>
+        why they should use it!!</div>
+    </article>
+  </main> 
+
+
+  
 </body>
 </html>
