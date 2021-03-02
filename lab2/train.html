@@ -9,25 +9,34 @@
   <meta name="author" content="SitePoint">
   <style>
   nav{
+    display: block;
     float: right;
-    padding-top: 20px; 
    }
    ul.hr li {
     display: inline-block;
-    padding-right: 20px; 
+    padding: 20px 20px; /* отступ между навигациями сверху-снизу справа-слева*/
    }
-   article div {
-    /*width: 48%  ;style=" float: left; margin-left: 20px;"*/
-    margin-top: 10px;
-   }
-   div.text{
+
+   div.text1{
+    margin: 0px 10px 0px 60px;
+    padding: 100px 0px 0px 0px;
     display: block; 
-    padding: 0px 200px 0px 20px; 
-    float: left;
+    
    }
    div.pict {
+    margin: 0px 10px 0px 60px;
     display: block;
-    margin: 0px 20px 0px 20px;
+   }
+   
+   div.pict2 {
+    margin: 0px 10px 0px 60px;
+    display: block;
+   }
+   div.text2{
+    margin: 0px 10px 0px 60px;
+    padding: 100px 0px 0px 0px;
+    display: block; 
+    
    }
 
        </style>
@@ -37,7 +46,7 @@
  
 <body>
   <header style="height: 80px">
-    <h1 style="display: block; float: left; margin-left: 20px;">Wonder App</h1>
+    <h1 style="display: block; float: left; padding: 0px 20px;">Wonder App</h1>
       <nav>
         <ul class="hr">
           <li><a href="#p1">Product</a></li>
@@ -49,22 +58,81 @@
       </nav>
   </header>
 
-  <main style="margin-top: 10px">
-    <article name="#p1" style="margin: 0px 150px;">
-      <div class="text">
-        <p style="padding-top:60px; text-align:center"><b>It's better than<br>sliced bread!</b></p>
+  <main style=" padding: 10px 15px">
+    <article id="p1" style="padding: 20px 20px">
+      <div class="text1" style="float: left" > 
+        <p style="text-align:center"><b>It's better than<br>sliced bread!</b></p>
         <p style="text-align:center"> Tell, the world how awesome your app is and<br>why they should use it!!</p>
         <p style="text-align:center"><input type="submit" value="Get Started"></p>
       </div>
       
-      <div class="pict">
-        <a href="B:\информатика\Новая папка\Basic-frontend-dev-labs\lab2"><img height="300" width="300" src="ftr1.jpg" alt="Рисунок 1"></a>
+      <div class="pict" style="float: right">
+        <a href="B:\информатика\Новая папка\Basic-frontend-dev-labs\lab2"><img height="400" width="400" src="ftr1.jpg" alt="Рисунок 1"></a>
       </div>
     </article>
+    <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>  
+    <br>
+    <br>
+    <br>
+    <br>  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    <hr>
 
-    <article name="#p2">
 
+
+    <article id="p2" style="padding: 20px 20px;">
+<div class="pict2" style="float: left">
+  <a href="B:\информатика\Новая папка\Basic-frontend-dev-labs\lab2"><img height="400" width="400" src="ftr2.jpg" alt="Рисунок 2"></a>
+</div>
+<div class="text2" >
+  <p style="text-align:center"><b>Feature 1</b></p>
+  <p style="text-align:center">Explanation of why you are going to love it<br>and the benefit!</p>
+  <p style="text-align:center"><input type="submit" value="Learn More"></p>
+</div>
     </article>
+<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<hr>
+  <article id="p2" style="padding: 20px 20px;">
+
+<div class="text2" style="float: left">
+  <p style="text-align:center"><b>Feature 2</b></p>
+  <p style="text-align:center">Explanation of why you are going to love it<br>and the benefit!</p>
+  <p style="text-align:center"><input type="submit" value="Learn More"></p>
+</div>
+<div class="pict" style="float: right">
+  <a href="B:\информатика\Новая папка\Basic-frontend-dev-labs\lab2"><img height="400" width="400" src="ftr3.jpg" alt="Рисунок 2"></a>
+</div>
+    </article>
+
+
   </main> 
 
 
