@@ -8,29 +8,36 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <style>
-
-        ul.hr {
-    margin-left: 40px; 
+  nav{
+    float: right;
     padding-top: 20px; 
-    padding-left: 300px; float: right;
    }
    ul.hr li {
-    display: inline; 
-    
-    padding-right: 30px; 
-    margin-left: 10px; 
+    display: inline-block;
+    padding-right: 20px; 
    }
-   header {
-     display: flex;
+   article div {
+    /*width: 48%  ;style=" float: left; margin-left: 20px;"*/
+    margin-top: 10px;
    }
+   div.text{
+    display: block; 
+    padding: 0px 200px 0px 20px; 
+    float: left;
+   }
+   div.pict {
+    display: block;
+    margin: 0px 20px 0px 20px;
+   }
+
        </style>
   <link rel="stylesheet" href="css/styles.css?v=1.0">
  
 </head>
  
 <body>
-  <header>
-    <h1 style="padding-left:20px">Wonder App</h1>
+  <header style="height: 80px">
+    <h1 style="display: block; float: left; margin-left: 20px;">Wonder App</h1>
       <nav>
         <ul class="hr">
           <li><a href="#p1">Product</a></li>
@@ -41,7 +48,24 @@
         </ul>
       </nav>
   </header>
-  
+
+  <main style="margin-top: 10px">
+    <article name="#p1" style="margin: 0px 150px;">
+      <div class="text">
+        <p style="padding-top:60px; text-align:center"><b>It's better than<br>sliced bread!</b></p>
+        <p style="text-align:center"> Tell, the world how awesome your app is and<br>why they should use it!!</p>
+        <p style="text-align:center"><input type="submit" value="Get Started"></p>
+      </div>
+      
+      <div class="pict">
+        <a href="B:\информатика\Новая папка\Basic-frontend-dev-labs\lab2"><img height="300" width="300" src="ftr1.jpg" alt="Рисунок 1"></a>
+      </div>
+    </article>
+
+    <article name="#p2">
+
+    </article>
+  </main> 
 
 
   
