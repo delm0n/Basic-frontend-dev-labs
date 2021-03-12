@@ -1,0 +1,11 @@
+body {
+    position: absolute;
+    background: linear-gradient(0deg, #5F7AD3, #5F7AD3);
+}
+.cont2 {
+    background:#FFF;
+    margin: 93px 150px 100px 150px;
+    width: 1300px;
+    height: 2195px;
+    /* position: absolute; */
+}
