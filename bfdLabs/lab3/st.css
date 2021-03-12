@@ -27,7 +27,55 @@
 }
 .play2 {
     width:1300px;
-    height:410px;
+    height:409px;
     overflow: hidden;
     background: #000;
+}
+.setka {
+    display:grid;
+    grid-template-columns: 414px 416px 414px;
+    grid-template-rows: 190px 190px 190px 190px;
+    margin: 30px 30px 0px 30px;
+}
+.lastnews {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 1;
+    background: red;
+}
+.borntoday {
+    grid-row: 1;
+    grid-column: 2;
+    background: green; 
+    padding-top: 33px;
+}
+.seeonnet {
+    grid-row: 2;
+    grid-column: 2;
+    background: yellow; 
+    padding-top: 33px;
+}
+.tdwall {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 3;
+    background: red;
+}
+.top250 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 1;
+    background: blue;
+}
+.randmu {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 2;
+    background: green;
+}
+.boxof {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 3;
+    background: blue;
 }
