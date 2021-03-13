@@ -33,7 +33,7 @@
 }
 .setka {
     display:grid;
-    grid-template-columns: 414px 416px 414px;
+    grid-template-columns: 414px 420px 414px;
     grid-template-rows: 200px 200px 240px 200px;
     margin: 30px 30px 64px 30px;
 }
