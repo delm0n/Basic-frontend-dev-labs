@@ -13,7 +13,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     width: 1300px;
-    height: 2195px;
+    height: 2200px;
 }
  header {
     height: 87px;
@@ -34,7 +34,7 @@
 .setka {
     display:grid;
     grid-template-columns: 414px 416px 414px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 240px 200px;
     margin: 30px 30px 64px 30px;
 }
 .lastnews {
@@ -64,20 +64,21 @@
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column: 1;
-    padding-top: 35px;
+    padding-top: 75px;
 }
 .randmu {
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column: 2;
     overflow: hidden;
+    padding-top: 35px;
 }
 .boxof {
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column: 3;
     padding-left: 10px ;
-    padding-top: 35px;
+    padding-top: 75px;
 }
 .recent {
     margin:35px 0px 18px 16px ;
