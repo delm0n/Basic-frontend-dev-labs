@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="skewed-bottom-right">
+        <!-- телефон -->
+        <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50" style="padding-top: 40px; padding-left: 83px; padding-right: 83px;">
+          <img class="h-12" src="img/logo.png" alt=logo"" width="auto"> 
+          <img src="img/ic_menu_48px.png" alt="burger" width="auto"> 
+          <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-gray-400 p-3">
+              
+            </button>
+          </div>
+          
+          
+        </nav>
+        
+        <div class="bg-gray-50 pt-12 lg:pt-20 pb-20 radius-for-skewed">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
+                <div class="w-full text-center lg:text-left">
+                  <div class="max-w-md mx-auto lg:mx-0">
+                    <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
+                      <span>New Automation <br>Tool for Your Home</span>
+                    </h2>
+                  </div>
+                  <div class="max-w-sm mx-auto lg:mx-0">
+                    <p class="mb-6 text-gray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
+                    <div><a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-green-600 hover:bg-green-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#">Get Started</a><a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200" href="#">How it works</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
+                <div class="relative" style="z-index: 0;"><img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none" src="img/illustration.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="hidden navbar-menu relative z-50">
+          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+          <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+              <a class="mr-auto text-3xl font-bold leading-none" href="#"><img class="h-10" src="atis-assets/logo/atis/atis-mono-black.svg" alt="" width="auto"></a>
+              <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              
+            </div>
+            <div class="mt-auto">
+              <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#">Sign In</a><a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-green-600 hover:bg-green-700 rounded-l-xl rounded-t-xl" href="#">Sign Up</a></div>
+              <p class="my-4 text-xs text-center text-gray-400">
+                <span>© 2020 All rights reserved.</span>
+              </p>
+              <div class="text-center"><a class="inline-block px-1" href="#"><img src="atis-assets/social/facebook.svg" alt=""></a><a class="inline-block px-1" href="#"><img src="atis-assets/social/twitter.svg" alt=""></a><a class="inline-block px-1" href="#"><img src="atis-assets/social/instagram.svg" alt=""></a></div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <script src="index.js"></script>
+</body>
+</html>
