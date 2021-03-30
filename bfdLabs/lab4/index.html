@@ -9,7 +9,8 @@
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen bg-white">
+<body >
+  <div class="min-h-screen bg-white">
   <section class="bg-gradient-to-t from-blue-200 to-blue-50">
     <nav class="relative px-6 py-6 lg:px-20 lg:py-10 flex justify-between items-center ">
       <a class="leading-none" href="#"><img src="img/logo.png" class="w-auto" alt="logo"></a>
@@ -31,13 +32,13 @@
                 </h2>
               </div>
               <div class="max-w-sm mx-auto lg:mx-0">
-                <p class="mb-6 lg:mb-16 font-regular text-base leading-normal text-gray-600">Lorem ipsum dolor sit amet,
+                <p class="mb-6 lg:mb-16 font-regular text-base leading-normal text-gray-600 xl:text-lg">Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
                   Faucibus tristique vulputate ultrices ut mauris tellus at.
                   Posuere sollicitudin odio tellus elit.
                 </p>
               </div>
-              <div>
+              <div id="btn1">
                 <a class="inline-block text-center font-semibold text-base mb-5 w-full md:w-auto py-3 px-12 leading-loose bg-blue-500 hover:bg-blue-700 text-white font-regular rounded-lg transition duration-400"
                   href="#">See Our Project</a>
               </div>
@@ -56,8 +57,8 @@
 
 <!-- блок what we do -->
   <section>
-    <div class="py-20">
-      <div class="container mx-auto px-12 py-6 lg:px-20 lg:py-10 relative">
+    <div class="py-20 lg:py-32 xl:py-40">
+      <div class="container mx-auto px-12 py-0 lg:px-20 relative">
         <div class="flex flex-wrap ">
           <div class="max-w-md mx-auto lg:w-5/12 lg:mx-0 ">
             <h3
@@ -66,8 +67,8 @@
             </h3>
           </div>
           
-          <div class="lg:w-2/12 xl:w-1/12"></div>
-          <div class=" mb-20 bg-white xl:mb-20 xl:ml-20 lg:w-5/12 lg:px-6"
+          <div class="z-10 lg:w-2/12 xl:w-1/12"></div>
+          <div class=" mb-10 bg-white xl:mb-20 xl:ml-20 lg:w-5/12 lg:px-6"
             style=" box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); border-radius: 10px;">
             <img class="py-12  mx-auto" src="img/1.png" alt="1block">
             <div class="mx-12 text-left ">
@@ -84,9 +85,8 @@
             </div>
           </div>
 
-          <div class="lg:absolute lg:mt-40 lg:ml-12">
-          
-          <div class="mb-8 bg-white lg:px-6  lg:mt-40 lg:w-5/12 xl:ml-12"
+        <div class="lg:absolute z-0 lg:mt-40 lg:ml-12">
+          <div class="mb-10 bg-white lg:px-6  lg:mt-40 lg:w-5/12 xl:ml-12"
             style="box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); border-radius: 10px;">
             <div class="xl:mt-20 xl:mx-5">
               <img class="py-12  mx-auto" src="img/2.png" alt="1block">
@@ -106,13 +106,13 @@
         </div>
 
           <!-- блок-невидимка -->
-          <div class=" lg:w-5/12 xl:mx-0 ">
-            <h3 class="lg:text-left lg:text-4xl lg:leading-tight lg:font-semibold text-white">
+          <div class="hidden lg:block lg:w-5/12 xl:mx-0 ">
+            <h3 class="hidden lg:block lg:text-left lg:text-4xl lg:leading-tight lg:font-semibold text-white">
               What we do to help our client grow in digital era,
             </h3>
           </div>
 
-          <div class="lg:w-2/12 xl:w-1/12"></div>
+          <div class="z-10 lg:w-2/12 xl:w-1/12"></div>
           <div class="mb-8 bg-white xl:mb-20 lg:w-5/12 lg:px-6 xl:ml-20"
             style="box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2); border-radius: 10px;">
             <img class="py-12  mx-auto" src="img/3.png" alt="1block">
@@ -135,30 +135,81 @@
 
 <!-- блок our_project -->
 <section>
-  <div class="py-20">
-    <div class="container mx-auto px-12 py-6 lg:px-20 lg:py-10 relative">
+  <div class="pb-20 lg:pb-32 xl:pb-40">
+    <div class="container mx-auto px-12 py-0 lg:px-20  relative">
       <div class="flex flex-wrap ">
         <div class="max-w-md mx-auto lg:w-3/12 lg:mx-0 ">
           <h3 class="w-full text-center lg:text-left text-3xl mb-8 xl:text-4xl leading-tight font-semibold text-blue-900">
-            Our Finished Project          </h3>
+            Our Finished Project          
+          </h3>
         </div>
         <div class="lg:w-1/12"></div>
         <div class="max-w-md mx-auto lg:w-7/12 lg:mx-0 ">
-          <p class="lg:ml-20 xl:ml-30 mb-8 font-regular text-base leading-normal text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+          <p class="max-w-md mx-auto text-center lg:text-left lg:ml-20 xl:ml-30 mb-8 font-regular text-base leading-normal text-gray-600 xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
             sed do eiusmod tempor incididunt ut 
             labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
-        <div class="max-w-full mx-auto">
+
+        <div class="mb-10 md:hidden max-w-full mx-auto">
+          <div class="absolute right-0 pt-5 pr-10 xl:pr-40" >
+            <h3 class="text-right pb-1 px-10 font-medium text-xl leading-none text-white">Smart Home Installation</h3>
+            <p class="text-right px-10 font-regular text-sm text-white">In Muarakana Housing Estate</p>
+         </div>
           <img class="md:hidden" src="img/MaskGroupTel.png" alt="MaskGroupTel">
         </div>
-        <div class="reletive max-w-full mx-auto xl:mt-8">
+
+        <div class="hidden md:block reletive max-w-full mx-auto xl:mt-8">
           <div class="absolute right-0 pt-12 pr-20 xl:pr-40" >
-             <h3 class="text-right pr-10 font-medium text-2xl leading-normal text-white">Smart Home Installation</h3>
-             <p class="text-right pr-10 font-regular text-base leading-normal text-white">In Muarakana Housing Estate</p>
+             <h3 class="text-right pr-10 font-medium text-2xl leading-normal text-white xl:text-3xl">Smart Home Installation</h3>
+             <p class="text-right pr-10 font-regular text-base leading-normal text-white xl:text-lg">In Muarakana Housing Estate</p>
           </div>
-          <img class="lg: mb-10" src="img/MaskGroup.png" alt="MaskGroup">          
-          
+          <img class="mb-10 lg:mb-5 xl:mb-32" src="img/MaskGroup.png" alt="SmartHome">          
         </div>
+
+        <div class="flex flex-wrap xl:mx-auto ">
+          <div class="max-w-md mx-auto mb-10 lg:w-4/10 xl:mr-20 relative ">
+            <div class="absolute max-w-md mx-auto px-8 " >
+              <h3 class="font-medium pt-5 pb-1 text-xl leading-none text-white lg:pt-10 lg:text-2xl xl:text-3xl">Sparklite App</h3>
+              <p class=" font-light text-sm leading-normal text-gray-300 lg:text-base xl:text-lg">Marketplace</p>
+           </div>
+            <img src="img/block2.png" alt="Sparclite">
+          </div>
+
+          <div class="max-w-md mx-auto mb-10 lg:ml-5 xl:ml-20 relative">
+            <div class="absolute max-w-md mx-auto px-8 " >
+              <h3 class="font-medium pt-5 pb-1 text-xl leading-none text-white lg:pt-10 lg:text-2xl xl:text-3xl">Car-Rapetition App</h3>
+              <p class=" font-light text-sm leading-normal text-gray-300 lg:text-base xl:text-lg">Board</p>
+           </div>
+            <img src="img/block3.png" alt="Car-Par">
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</section>
+</div>
+<section> 
+  <div class="hidden md:block"> <!-- для планшетов и выше -->
+    <div class="max-w-full bg-blue-400 rounded-tl-full pt-10 px-12">
+      <div class="container mx-auto px-12 py-0 lg:px-20 relative">
+     
+        <div class="flex flex-wrap ">
+          <div class="max-w-md mx-auto lg:w-3/12 lg:mx-0 lg:mt-16">
+            <h3 class="w-full text-center lg:text-left text-3xl mb-8 xl:text-4xl leading-tight font-semibold text-white">
+              Our Finished Project          
+            </h3>
+          </div>
+          <div class="lg:w-1/12"></div>
+          <div class="max-w-md mx-auto lg:w-7/12 lg:mx-0 lg:mt-16">
+            <p class="max-w-md mx-auto text-center lg:text-left lg:ml-20 xl:ml-30 mb-8 font-regular text-base leading-normal text-gray-300  xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+              sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div> 
+      </div> 
+    </div>
+  </div>
+
 </section>
 
   <script src="index.js"></script>
