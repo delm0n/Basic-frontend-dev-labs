@@ -1,13 +1,13 @@
 let username = undefined;
 
 let boller = false;
-const button = document.getElementById('btn')
-const button1 = document.getElementById('btn1')
-const button2 = document.getElementById('btn2')
-const button3 = document.getElementById('btn3')
-const button4 = document.getElementById('btn4')
-const button5 = document.getElementById('btn5')
-const button6 = document.getElementById('btn6')
+const button = document.getElementById('btn');
+const button1 = document.getElementById('btn1');
+const button2 = document.getElementById('btn2');
+const button3 = document.getElementById('btn3');
+const button4 = document.getElementById('btn4');
+const button5 = document.getElementById('btn5');
+const button6 = document.getElementById('btn6');
 
 const NameMess =() =>{
 if (boller === false)
