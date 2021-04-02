@@ -3,7 +3,7 @@ let username = undefined;
 let boller = false;
 const button = document.getElementById('btn');
 const buttonF = document.getElementById('btn2');
-
+const See = document.getElementById('see');
 const button1 = document.getElementById('btnmap');
 const button2 = document.getElementById('btnmore');
 const button3 = document.getElementById('btnmap1');
@@ -24,6 +24,10 @@ const button16 = document.getElementById('btnmore6');
 const button17 = document.getElementById('btnmore7');
 const button18 = document.getElementById('btnmore8');
 
+const butnext = document.getElementById('mobnext'),
+butnext1 = document.getElementById('mobnext1'),
+butnext2 = document.getElementById('mobnext2'),
+butnext3 = document.getElementById('mobnext3');
 
 const NameMess =() =>{
     if (boller === false)
@@ -41,6 +45,7 @@ const NameMess =() =>{
     }
     }
     
+
     
     button.addEventListener('click', e =>{
         NameMess();
@@ -100,5 +105,20 @@ const NameMess =() =>{
         NameMess();
     })
     button18.addEventListener('click', e =>{
+        NameMess();
+    })
+    butnext.addEventListener('click', e =>{
+        NameMess();
+    })
+    butnext1.addEventListener('click', e =>{
+        NameMess();
+    })
+    butnext2.addEventListener('click', e =>{
+        NameMess();
+    })
+    butnext3.addEventListener('click', e =>{
+        NameMess();
+    })
+    See.addEventListener('click', e =>{
         NameMess();
     })
