@@ -1,19 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Зуев Артём</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зуев Артём</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="min-h-screen bg-white">
-          <nav class="relative px-6 py-6 lg:px-20 lg:py-10 flex justify-between items-center ">
-            <a class="leading-none" href="#"><img src="img/logo.png" class="w-auto" alt="logo"></a>
-            <button id="btn" class="navbar-burger flex items-center">
-              <img class="block" alt="btn" src="img/ic_menu_48px.png">
-            </button>
-          </nav>
+
+<body class="min-h-screen bg-white">
+  <header>
+    <!-- <div class="min-h-screen bg-white"> -->
+    <nav class="relative px-6 py-6 lg:px-20 lg:py-10 flex justify-between items-center ">
+      <a class="leading-none" href="#"><img src="img/logo.png" class="w-auto" alt="logo"></a>
+      <button id="btn" class="navbar-burger flex items-center">
+        <img class="block" alt="btn" src="img/ic_menu_48px.png">
+      </button>
+    </nav>
+    <!-- tiitle -->
+    <div class="bg-fixed" style="background: url('img-2/bagr.png'); background-size: cover;">
+      <div class="container mx-auto px-12 py-0 lg:px-20">
+        <div class="text-center text-white py-10">
+          <h1 class="text-3xl lg:text-4xl xl:text-5xl font-semibold mb-4">Blog Afrianska</h1>
+          <p class="font-regular text-gray-300 text-base leading-normal xl:text-lg mb-4">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- search -->
+  <section>
+    <div class="container mx-auto px-12 my-10 lg:my-14 lg:px-20">
+      <div class="relative">
+        <img class="absolute ml-6 my-5" src="img-2/saercher.png" alt="Search">
+        <input type="text" placeholder="Search Article" class="w-full py-4 pl-16 rounded-md bg-yellow-100">
+      </div>
+    </div>
+  </section>
+
+  <!-- popular -->
+  <section>
+    <div class="container mx-auto px-12 my-10 lg:my-14 lg:px-20">
+      <h3 class="font-regular text-base text-blue-600">POPULAR</h3>
+      <div class="grid grid-cols-1 grid-rows-4 md:grid-cols-3 md:grid-rows-3 ">
+
+        <!-- первая карточка -->
+        <div class="md:col-span-3">
+          <!--Ширина первой карточки в md-->
+          <div class="md:grid md:grid-cols-10">
+            <div class="col-span-4">
+              <!-- Ширина офферной конструкции в md-->
+              <h1 class="text-3xl text-blue-900 lg:text-4xl xl:text-5xl font-semibold mb-5">Feugiat sodales at nullam
+                tellus.</h1>
+              <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla
+                porta pellentesque ipsum.</p>
+
+              <!-- bottom-конструкция -->
+              <div class="mb-10 grid grid-cols-12 grid-rows-1">
+                <div class="col-span-6 ">
+                  <p class="font-regular text-blue-900 text-sm leading-normal xl:text-lg ">Samatha Leuthex</p>
+                  <p class="font-regular text-gray-600 text-sm leading-normal xl:text-lg ">May 5, 3 min read</p>
+                </div>
+                <div class="col-span-2"></div>
+                <div class="my-auto">
+                  <img src="img-2/bookmarks.png" alt="bookmarks">
+                </div>
+                <div class="col-span-1 "></div>
+                <div class="my-auto">
+                  <img src="img-2/more.png" alt="more">
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <!--расстояние между оффером и картикой -->
+            <div class="col-span-5 md:my-auto">
+              <!-- картинка в md-->
+              <img src="img-2/grid1/1.png" alt="1">
+            </div>
+          </div>
+        </div>
+
+        <div class="md:row-span-2 col-span-3">
+          <!-- вторая карточка -->
+          <div class="md:grid md:grid-cols-11 md:grid-rows-1 ">
+            <div class="col-span-3">
+              <img src="img-2/grid1/2.png" alt="2">
+              <h1 class="text-2xl text-blue-900 leading-tight lg:text-4xl font-semibold mb-5">Porta proin
+                tellus sed pulvinar odio eu pulvinar.</h1>
+              <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla
+                porta pellentesque ipsum.</p>
+              <div class="mb-10 grid grid-cols-12 grid-rows-1">
+                <div class="col-span-6 ">
+                  <p class="font-regular text-blue-900 text-sm leading-normal xl:text-lg ">Samatha Leuthex</p>
+                  <p class="font-regular text-gray-600 text-sm leading-normal xl:text-lg ">May 5, 3 min read</p>
+                </div>
+                <div class="col-span-2"></div>
+                <div class="my-auto">
+                  <img src="img-2/bookmarks.png" alt="bookmarks">
+                </div>
+                <div class="col-span-1 "></div>
+                <div class="my-auto">
+                  <img src="img-2/more.png" alt="more">
+                </div>
+              </div>
+
+            </div>
+            <div></div>
+            <!-- третья карточка -->
+            <div class="col-span-3">
+              <img src="img-2/grid1/3.png" alt="3">
+              <h1 class="text-2xl text-blue-900 leading-tight lg:text-4xl font-semibold mb-5">Non quam tortor,
+                proin eu egestas scelerisque purus.</h1>
+              <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla
+                porta pellentesque ipsum.</p>
+              <div class="mb-10 grid grid-cols-12 grid-rows-1">
+                <div class="col-span-6 ">
+                  <p class="font-regular text-blue-900 text-sm leading-normal xl:text-lg ">Samatha Leuthex</p>
+                  <p class="font-regular text-gray-600 text-sm leading-normal xl:text-lg ">May 5, 3 min read</p>
+                </div>
+                <div class="col-span-2"></div>
+                <div class="my-auto">
+                  <img src="img-2/bookmarks.png" alt="bookmarks">
+                </div>
+                <div class="col-span-1 "></div>
+                <div class="my-auto">
+                  <img src="img-2/more.png" alt="more">
+                </div>
+              </div>
+
+            </div>
+
+            <div></div>
+            <!-- четвёртая карточка -->
+            <div class="col-span-3">
+              <img src="img-2/grid1/4.png" alt="4">
+              <h1 class="text-2xl text-blue-900 leading-tight lg:text-4xl font-semibold mb-5">Amet amet
+                sed pharetra risus sit eget interdum.</h1>
+              <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla
+                porta pellentesque ipsum.</p>
+              <div class="mb-10 grid grid-cols-12 grid-rows-1">
+                <div class="col-span-6 ">
+                  <p class="font-regular text-blue-900 text-sm leading-normal xl:text-lg ">Samatha Leuthex</p>
+                  <p class="font-regular text-gray-600 text-sm leading-normal xl:text-lg ">May 5, 3 min read</p>
+                </div>
+                <div class="col-span-2"></div>
+                <div class="my-auto">
+                  <img src="img-2/bookmarks.png" alt="bookmarks">
+                </div>
+                <div class="col-span-1 "></div>
+                <div class="my-auto">
+                  <img src="img-2/more.png" alt="more">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
 </body>
+
 </html>
