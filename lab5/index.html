@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div id="load" wire:loading
+    class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-blue-800 opacity-30 flex flex-col items-center justify-center">
+    <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+    <h2 class="text-center text-white text-xl font-semibold">Загрузка страницы …</h2>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="hidden fixed z-10 pt-32 left-0 top-0 w-full h-full overflow-auto
+bg-blue-800 bg-opacity-25">
+    <!-- Modal content -->
+    <div class="bg-white mx-auto my-auto p-5 border-2 lg:border-4 border-blue-300  w-9/12 xl:w-6/12">
+      <div class="grid grid-cols-10">
+        <div class=" col-span-9 text-xl font-bold text-gray-900 text-center">Макет реализовал <br> Зуев Артём
+          Игоревич.<br> Вариант №8</div>
+        <div class=" text-right "><span class="text-2xl text-blue-400 hover:text-black" id="close">&times;</span></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-bold items-center text-gray-900 mb-4 md:mb-0">
+        <img src="img/logo.svg" alt="logo">
+        <span class="ml-3 text-xl">Trafalgar</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900"><span class="font-bold">Home</span></a>
+        <a class="mr-5 hover:text-gray-900">Find a doctor</a>
+        <a class="mr-5 hover:text-gray-900">Apps</a>
+        <a class="mr-5 hover:text-gray-900">Testimonials</a>
+        <a class="mr-5 hover:text-gray-900">About us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- главный экран -->
+  <section class="relative text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 pt-16 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">
+          Virtual healthcare for you
+        </h1>
+        <p class="mb-8 leading-relaxed font-light text-gray-500">Trafalgar provides progressive, and affordable
+          healthcare,
+          accessible on mobile and online for everyone</p>
+        <div class="flex justify-center">
+          <button id="myBtn"
+            class="font-bold inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded-3xl text-md">Consult
+            today</button>
+        </div>
+      </div>
+      <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+        <img class="" alt="illustration" src="img/illustration.svg">
+      </div>
+    </div>
+    <img class="absolute top-0 lg:mt-10" src="img/element.svg" alt="element">
+  </section>
+
+  <!-- our services -->
+  <section id="gridd" class="text-gray-600 body-font">
+    <div class="container px-5 py-24 lg:py-48 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900">Our services</h2>
+        <img class="mx-auto mb-4 w-14 h-0.5" src="img/Rectangle.svg" alt="Rectangle">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base font-light text-gray-500">We provide to you the best
+          choiches for you. Adjust it to your
+          health needs and make sure your undergo treatment with our highly qualified doctors you
+          can consult with us which type of service is suitable for your health</p>
+      </div>
+
+      <div
+        class="pb-16 grid grid-cols-1 grid-rows-6 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-x-9 gap-y-9">
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img src="img/1.svg" alt="1">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Search doctor</h3>
+          <p class="font-light text-gray-500">Choose your doctor from thousands of specialist, general, and trusted
+            hospitals</p>
+        </div>
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img src="img/2.svg" alt="2">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Online pharmacy</h3>
+          <p class="font-light text-gray-500">Buy your medicines with our mobile application with a simple delivery
+            system</p>
+        </div>
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img src="img/3.svg" alt="3">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Consultation</h3>
+          <p class="font-light text-gray-500">Free consultation with our trusted doctors and get the best recomendations
+          </p>
+        </div>
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img src="img/4.svg" alt="4">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Details info</h3>
+          <p class="font-light text-gray-500">Free consultation with our trusted doctors and get the best recomendations
+          </p>
+        </div>
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img class="my-3" src="img/5.svg" alt="5">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Emergency care</h3>
+          <p class="font-light text-gray-500">You can get 24/7 urgent care for yourself or your children and your lovely
+            family</p>
+        </div>
+
+        <div class="rounded-2xl p-10 bg-white">
+          <img src="img/6.svg" alt="6">
+          <h3 class="sm:text-xl text-lg font-bold title-font my-4 text-gray-900">Tracking</h3>
+          <p class="font-light text-gray-500">Track and save your medical history and health data</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button id="myBtn2"
+          class="inline-flex text-blue-400 font-bold
+                bg-white border-2 border-blue-400 py-2 px-6 focus:outline-none hover:bg-blue-500 hover:text-white hover:border-blue-500 rounded-3xl text-md">Learn
+          more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative">
+    <!-- section 2  -->
+    <article class=" text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
+        <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+          <img class="" alt="illustration" src="img/illus1.svg">
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-20 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h2 class="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">
+            Leading healthcare providers
+          </h2>
+          <img class=" mb-4 w-14 h-0.5" src="img/Rectangle.svg" alt="Rectangle">
+          <p class="mb-8 leading-relaxed font-light text-gray-500">Trafalgar provides progressive, and affordable
+            healthcare, accessible on mobile and online for
+            everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+          <div class="flex justify-center">
+            <button id="myBtn4"
+              class="inline-flex text-blue-400 font-bold
+                        bg-white border-2 border-blue-400 py-2 px-6 focus:outline-none hover:bg-blue-500 hover:text-white hover:border-blue-500 rounded-3xl text-md">Learn
+              more</button>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+    <img class="absolute top-1/2 right-0 lg:mb-24" src="img/element.svg" alt="element">
+    <!-- section 3  -->
+    <article class=" text-gray-600 body-font">
+      <div class="container mx-auto flex px-0 py-24 lg:py-48  md:flex-row flex-col items-center">
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-20 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h2 class="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">
+            Download our mobile apps
+          </h2>
+          <img class=" mb-4 w-14 h-0.5" src="img/Rectangle.svg" alt="Rectangle">
+          <p class="mb-8 leading-relaxed font-light text-gray-500">Our dedicated patient engagement app and web portal
+            allow you to
+            access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+          <div class="flex justify-center">
+            <div id="myBtn3" class="inline-flex text-blue-400 font-bold
+                    bg-white border-2 border-blue-400 py-2 px-6 focus:outline-none  rounded-3xl text-md">
+              <div class="grid grid-cols-10 grid-rows-1">
+                <div class="col-span-9">Dowload</div>
+                <div class="pt-1"><img src="img/Vector.svg" alt="vector"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:max-w-xl lg:w-full md:w-1/2 w-5/6">
+          <img class="" alt="illustration" src="img/illus2.svg">
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <!-- section 4 -->
+  <section class="relative text-gray-600 body-font py-24 lg:py-48 ">
+    <div id="blueblock" class="container mx-auto flex px-5 py-16   md:flex-row flex-col items-center">
+      <div class="rounded-xl flex flex-col text-center w-full mb-20">
+        <h2 class="title-font sm:text-3xl text-2xl font-bold mb-4 text-white ">
+          What our customer are saying
+        </h2>
+        <img class="mx-auto mb-8 w-14 h-0.5" src="img/white.svg" alt="white">
+        <div class="grid items-center grid-cols-1 grid-rows-2 md:grid-cols-12 md:grid-rows-1">
+          <div class="md:col-span-6">
+            <div class="text-center md:text-left grid grid-cols-12">
+              <div class=" col-span-1 md:col-span-2"></div>
+              <div class="col-span-3">
+                <img src="img/photo.svg" alt="photo">
+              </div>
+              <div></div>
+              <div class="col-span-6 text-white md:my-auto">
+                <h3 class="font-bold">Edward Newgate</h3>
+                <p class="font-light">Founder Circle</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-4 my-auto">
+            <p class="font-light text-white text-center md:text-left">“Our dedicated patient engagement app and web
+              portal allow
+              you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and
+              securely”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" flex justify-center">
+      <div class="px-5  mt-10 text-center flex flex-row ">
+        <img class="mr-10 md:mr-20" id="nav1" src="img/nonactiv.svg" alt="1">
+        <img class="mr-5" id="nav2" src="img/Ellipse1.svg" alt="Ellipse">
+        <img class="mr-5" id="nav3" src="img/Ellipse2.svg" alt="Ellipse">
+        <img class="mr-5" id="nav4" src="img/Ellipse2.svg" alt="Ellipse">
+        <img id="nav5" src="img/Ellipse2.svg" alt="Ellipse">
+        <img class="ml-10 md:ml-20" id="nav6" src="img/activ.svg" alt="2">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Check out our latest article -->
+  <section id="sectionend">
+    <div class="container mx-auto  px-5 pb-24 lg:pb-48 md:flex-row flex-col items-center">
+
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="sm:text-3xl text-2xl font-bold title-font mb-6 text-gray-900">Check out our latest article</h2>
+        <img class="mx-auto mb-10 w-14 h-0.5" src="img/Rectangle.svg" alt="Rectangle">
+
+        <div class="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 gap-x-4">
+          
+
+          <!-- 1 карточка -->
+          
+          <div class="">
+            <img class=" rounded-t-2xl pb-8" src="img/doc1.svg" alt="1">
+            <h2 class="sm:text-2xl text-lg font-bold title-font mb-4 text-gray-900 text-left pl-4">
+              Disease detection, check up in the laboratory</h2>
+            <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5 text-left pl-4">LIn this
+              case, the role of the health laboratory is
+              very important to do a disease detection...</p>
+            <div id="myBtnMore1" class="mb-0 block text-blue-400 font-bold
+                      py-2 px-4  text-md">
+              <div class="mb-10 md:mb-0 grid grid-cols-10 grid-rows-1">
+                <div class="col-span-3 md:col-span-5 lg:col-span-4 xl:col-span-3 text-left">Read more</div>
+                <div class="pt-2"><img src="img/Frame.svg" alt="Frame"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 карточка -->
+          
+          <div class="">
+            <img class=" rounded-t-2xl pb-8" src="img/doc2.svg" alt="2">
+            <h2 class="sm:text-2xl text-lg font-bold title-font mb-4 text-gray-900 text-left pl-4">
+              Herbal medicines that are safe for consumption</h2>
+            <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5 text-left pl-4">Herbal
+              medicine is very widely used
+              at this time because of its very good for your health...</p>
+            <div id="myBtnMore2" class="mb-0 block text-blue-400 font-bold
+                        py-2 px-4  text-md">
+              <div class="mb-10 md:mb-0 grid grid-cols-10 grid-rows-1">
+                <div class="col-span-3 md:col-span-5 lg:col-span-4 xl:col-span-3 text-left">Read more</div>
+                <div class="pt-2"><img src="img/Frame.svg" alt="Frame"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- 3 карточка -->
+          
+          <div class="">
+            <img class=" rounded-t-2xl pb-8" src="img/doc3.svg" alt="3">
+            <h2 class="sm:text-2xl text-lg font-bold title-font mb-4 text-gray-900 text-left pl-4">
+              Natural care for healthy facial skin</h2>
+            <p class="font-regular text-black text-base leading-normal xl:text-lg mb-5 text-left pl-4">A healthy
+              lifestyle should start from
+              now and also for your skin health. There are some...</p>
+            <div id="myBtnMore3" class="mb-0 block text-blue-400 font-bold
+                        py-2 px-4 focus:outline-none  text-md">
+              <div class="mb-10 md:mb-0 grid grid-cols-10 grid-rows-1">
+                <div class="col-span-3 md:col-span-5 lg:col-span-4 xl:col-span-3 text-left">Read more</div>
+                <div class="pt-2"><img src="img/Frame.svg" alt="Frame"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="block text-center">
+        <button id="myBtnAll"
+          class="inline-flex text-blue-400 font-bold
+                bg-white border-2 border-blue-400 py-2 px-6 focus:outline-none hover:bg-blue-500 hover:text-white hover:border-blue-500 rounded-3xl text-md">View
+          all</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="fott" class="text-white body-font relative">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 mx-auto flex flex-wrap md:mx-0 mx-auto text-left">
+
+        <a class="flex title-font font-bold items-center  mb-4 md:mb-0">
+          <img src="img/logo2.svg" alt="logo">
+          <span class="ml-3 text-xl">Trafalgar</span>
+        </a>
+        <p class="mt-4 text-sm font-light">Trafalgar provides progressive, and affordable
+          healthcare, accessible on mobile and online for everyone</p>
+        <p class="mt-4 text-sm font-light"> ©Trafalgar PTY LTD 2020. All rights reserved</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  text-lg font-bold mb-3">Company</h2>
+          <nav class="list-none my-6">
+            <li class="mb-2">
+              <a class="font-light">About</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Testimonials</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Find a doctor</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Apps</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  text-lg font-bold mb-3">Region</h2>
+          <nav class="list-none my-6">
+            <li class="mb-2">
+              <a class="font-light">Indonesia</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Singapore</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Hongkong</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Canada</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium  text-lg font-bold mb-3">Help</h2>
+          <nav class="list-none my-6">
+            <li class="mb-2">
+              <a class="font-light">Help center</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Contact support</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">Instructions</a>
+            </li>
+            <li class="mb-2">
+              <a class="font-light">How it works</a>
+            </li>
+          </nav>
+        </div>
+        <img class="absolute bottom-0 left-0 lg:mt-10" src="img/element.svg" alt="element">
+      </div>
+    </div>
+
+
+
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+body {font-family:Mulish;}
+
+
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#gridd {
+    background-image: url("img/bg-element.svg");
+    /* background-image: url("img/train.svg"); */
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+
+#blueblock {
+    background-image: url("img/bg-elements.svg");
+    /* background-image: url("img/train.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+	border-radius: 25px;
+	background-size: cover;
+}
+
+#sectionend {
+	background-image: url("img/bg-element-2.svg");
+    /* background-image: url("img/train.svg"); */
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#fott {
+	background: rgb(103,195,243);
+background: linear-gradient(183deg, rgba(103,195,243,1) 0%, rgba(90,152,242,1) 100%);
+}
